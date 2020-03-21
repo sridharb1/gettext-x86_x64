@@ -1,10 +1,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libintl", "gettext-0.19.4\libintl.vcxproj", "{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libintl_dll", "gettext-0.19.4\libintl.vcxproj", "{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", "libiconv-1.14\libiconv.vcxproj", "{7EA4EC62-EA19-4ACC-86E2-0513E381292B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", "..\..\..\Projects\libiconv\libiconv.vcxproj", "{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libintl_static", "..\..\..\Projects\github\gettext-x86_x64\gettext-0.19.4\libintl_static.vcxproj", "{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,17 +24,27 @@ Global
 		{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}.Release|Win32.Build.0 = Release|Win32
 		{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}.Release|x64.ActiveCfg = Release|x64
 		{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}.Release|x64.Build.0 = Release|x64
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Debug|Win32.ActiveCfg = Debug|Win32
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Debug|Win32.Build.0 = Debug|Win32
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Debug|x64.ActiveCfg = Debug|x64
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Debug|x64.Build.0 = Debug|x64
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Release|Win32.ActiveCfg = Release|Win32
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Release|Win32.Build.0 = Release|Win32
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Release|x64.ActiveCfg = Release|x64
-		{7EA4EC62-EA19-4ACC-86E2-0513E381292B}.Release|x64.Build.0 = Release|x64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Debug|Win32.Build.0 = Debug|Win32
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Debug|x64.ActiveCfg = Debug|x64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Debug|x64.Build.0 = Debug|x64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Release|Win32.ActiveCfg = Release|Win32
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Release|Win32.Build.0 = Release|Win32
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Release|x64.ActiveCfg = Release|x64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Release|x64.Build.0 = Release|x64
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Debug|Win32.Build.0 = Debug|Win32
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Debug|x64.ActiveCfg = Debug|x64
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Debug|x64.Build.0 = Debug|x64
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Release|Win32.ActiveCfg = Release|Win32
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Release|Win32.Build.0 = Release|Win32
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Release|x64.ActiveCfg = Release|x64
+		{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B8B6072-8BF5-4FFC-B14F-73C7CB2C20FA}
+	EndGlobalSection
 EndGlobal
-
