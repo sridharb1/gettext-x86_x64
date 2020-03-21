@@ -16,6 +16,7 @@ can be used to compile gettext on Windows.
   * git clone [gettext-x86_x64](https://github.com/sridharb1/gettext-x86_x64)
   * Copy the contents of the gettext-x86_x64 folder into the build
     folder of gettext.
+  * This is based off of [karhl's gettext-msvc](https://github.com/kahrl/gettext-msvc)
     
 # Note #
 
