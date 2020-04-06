@@ -76,7 +76,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;E:\Projects\gettext\gettext-runtime;E:\Projects\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(ProjectDir)..\..\gettext-runtime\intl;$(ProjectDir)..\..\..\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBINTL;BUILDING_DLL;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -98,7 +98,7 @@
     <ClCompile>
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>.;E:\Projects\gettext\gettext-runtime;E:\Projects\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(ProjectDir)..\..\gettext-runtime\intl;$(ProjectDir)..\..\..\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBINTL;BUILDING_DLL;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader />
@@ -122,7 +122,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;E:\Projects\gettext\gettext-runtime;E:\Projects\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(ProjectDir)..\..\gettext-runtime\intl;$(ProjectDir)..\..\..\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBINTL;BUILDING_DLL;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -148,7 +148,7 @@
     <ClCompile>
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>.;E:\Projects\gettext\gettext-runtime;E:\Projects\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(ProjectDir)..\..\gettext-runtime\intl;$(ProjectDir)..\..\..\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBINTL;BUILDING_DLL;IN_LIBINTL;ENABLE_RELOCATABLE=1;IN_LIBRARY;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader />
@@ -167,7 +167,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Projects\gettext\gettext-runtime\intl\plural.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\windows-mutex.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\windows-recmutex.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\windows-rwlock.c" />
     <ClCompile Include="E:\Projects\gettext\gettext-runtime\intl\bindtextdom.c" />
     <ClCompile Include="E:\Projects\gettext\gettext-runtime\intl\dcgettext.c" />
     <ClCompile Include="E:\Projects\gettext\gettext-runtime\intl\dcigettext.c" />
@@ -196,11 +198,13 @@
     <ClCompile Include="E:\Projects\gettext\gettext-runtime\intl\textdomain.c" />
     <ClCompile Include="E:\Projects\gettext\gettext-runtime\intl\version.c" />
     <ClCompile Include="E:\Projects\gettext\gettext-runtime\intl\xsize.c" />
+    <ClCompile Include="plural.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Projects\gettext\gettext-runtime\intl\plural.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\plural-exp.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="libgnuintl.h" />
+    <ClInclude Include="plural.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Projects\libiconv\libiconv.vcxproj">

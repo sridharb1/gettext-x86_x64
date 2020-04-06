@@ -4,9 +4,11 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libintl_dll", "gettext\libintl.vcxproj", "{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", "..\..\..\Projects\libiconv\libiconv.vcxproj", "{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", "..\..\libiconv\libiconv.vcxproj", "{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libintl_static", "gettext\libintl_static.vcxproj", "{B8B3B620-FC06-47D0-9D92-BD5CBA448D84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Dependencies", "External Dependencies", "{76271479-1423-4109-B5B3-4555180D1BDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7} = {76271479-1423-4109-B5B3-4555180D1BDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B8B6072-8BF5-4FFC-B14F-73C7CB2C20FA}
